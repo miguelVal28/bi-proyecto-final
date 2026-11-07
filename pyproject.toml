@@ -7,7 +7,6 @@ name = "bi-proyecto-final"
 version = "0.1.0"
 description = "Prefect ETL boilerplate project managed with uv"
 readme = "README.md"
-requires-python = ">=3.11"
 dependencies = [
   "prefect>=2.20.0,<3.0.0",
 ]
@@ -22,3 +21,5 @@ pythonpath = ["src"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/bi_proyecto_final_etl"]
+requires-python = ">=3.14"
+dependencies = []
