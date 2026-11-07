@@ -15,3 +15,22 @@ La dirección tiene hoy dos necesidades que el Excel no resuelve:
 
 > **El equipo debe diseñar e implementar una que atienda ambas necesidades.**
 
+## Quickstart
+
+1. Install dependencies:
+
+```bash
+uv sync
+```
+
+2. Run the ETL flow:
+
+```bash
+uv run python -m bi_proyecto_final_etl
+```
+
+3. Run tests:
+
+```bash
+uv run pytest
+```

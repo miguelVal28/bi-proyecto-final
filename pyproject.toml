@@ -1,7 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
 [project]
 name = "bi-proyecto-final"
 version = "0.1.0"
-description = "Add your description here"
+description = "Prefect ETL boilerplate project managed with uv"
 readme = "README.md"
+dependencies = [
+  "prefect>=2.20.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bi_proyecto_final_etl"]
 requires-python = ">=3.14"
 dependencies = []
